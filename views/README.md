@@ -12,15 +12,15 @@ https://ejs.co/#docs
 ## tags
 |Tag|Desctiption|
 |---|---|
-|<%|This is a Scriptlet tag, used for control flows. This does not output anything|
-|<%_ _%>|'Whitespace Slurping' tag, this removes all whitespaces before it.|
-|<%= %>|Produces HTML escaped value|
-|<%- %>|HTML unescaped value (useful if you have generated html in database )|
-|<%# %>|Comment tag|
-|<%%|to output literal <%|
-|%>|Ending tag|
-|-%>|Trims following new line|
-|_%>|Remove white spaces after it|
+|<%|これは、制御フローに使用されるScriptletタグです。これは何も出力しません|
+|<%_ _%>|'Whitespace Slurping'タグ。これにより、その前のすべての空白が削除されます。|
+|<%= %>|HTMLエスケープ値を生成します|
+|<%- %>|HTMLのエスケープされていない値（データベースでhtmlを生成した場合に便利です）|
+|<%# %>|コメントタグ|
+|<%%|<%リテラルを出力する|
+|%>|終了タグ|
+|-%>|改行に続くトリム|
+|_%>|その後の空白を削除します|
 
 ## include
 ```
@@ -28,4 +28,8 @@ https://ejs.co/#docs
   <h1> Title <h1>
   <p> content </p>
 <%- include('partials/footer.ejs', data) %>
+```
+
+```
+<img id="my_img" src="<%= person.picture %>" alt="">
 ```

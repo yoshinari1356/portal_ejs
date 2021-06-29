@@ -9,19 +9,31 @@ app.use(express.static('public'));
 
 app.get("/", function (req, res) {
     var data = {
-        title: "climbchowder",
-        subtitle: "design and coding",
-        description: "description",
+        title: "welcome",
+        subtitle: "climbchowder",
+        description: "フリーランスプログラマー＆デザイナーをしています",
+        logo_url: "/images/icon_128_128.png",
         menus: [
-            { title: "Product" },
-            { title: "Features" },
-            { title: "Marketplace" },
-            { title: "Company" },
+            { title: "Profile" },
+            { title: "Skill" },
+            { title: "Blog" },
+            { title: "other" },
         ],
-        items: [
-            {name: "リンゴ"},
-            {name: "バナナ"},
-            {name: "スイカ"}
+        skills: [
+            { category: "design", name: "figma" },
+            { category: "front", name: "html5" },
+            { category: "front", name: "javascript" },
+            { category: "front", name: "es6" },
+            { category: "back",  name: "ruby on rails" },
+            { category: "front", name: "java" },
+            { category: "front", name: "nuxt" },
+            { category: "front", name: "vue" },
+            { category: "front", name: "ionic" },
+            { category: "front", name: "vue" },
+            { category: "front", name: "angular" },
+            { category: "infra", name: "aws" },
+            { category: "infra", name: "heroku" },
+            { category: "common", name: "github" },
         ]
     };
     // レンダリングを行う
